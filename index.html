@@ -54,8 +54,7 @@
           let bodyHeight = height - margin.top - margin.bottom
           let bodyWidth = width - margin.left - margin.right
 
-          //The container is the SVG where we will draw the chart. In our HTML is the svg tah with the id AirlinesChart
-          let container = d3.select("#AirlinesChart")
+          let container = d3.select("#AuthorChart")
           container
               .attr("width", width)
               .attr("height", height)
@@ -196,11 +195,11 @@
       loadData().then(showData);
     </script>
 
-    <h1>Donated and received amount across countries</h1>
+    <h1>Final Project - Good Book Review</h1>
     <div class="mainView">
         <div>
             <h2>Most famous author</h2>
-            <svg id="AirlinesChart"></svg>
+            <svg id="AuthorChart"></svg>
         </div>
         <!-- <div>
             <svg id="Map"></svg>
